@@ -13,4 +13,4 @@
 Nesne tabanlı programlama - Sunum.pptx, Kitap.pdf  
 <p>dosyaları ve
 <br />
-<p>Kaynak kod eklendi.
+<p>Kaynak kod (PacktLearningOOP.rar) eklendi.
