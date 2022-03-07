@@ -10,7 +10,7 @@
   
 # NesneTabanliProgramlama_II
 
-Nesne tabanlı programlama - Sunum.pptx, Kitap.pdf  
-<p>dosyaları ve
+Nesne tabanlı programlama - Sunum.pptx  
+<p>dosyası ve
 <br />
 <p>Kaynak kod (PacktLearningOOP.rar) eklendi.
