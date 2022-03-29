@@ -15,3 +15,5 @@ Nesne tabanlı programlama - Sunum.pptx
 <br />
 <p>Kaynak kod (PacktLearningOOP.rar) eklendi.
 <p>02_mutable_immutable.png ve 03_get_set.png dosyaları eklendi.
+<br />
+<p>Nesne tabanlı programlama - Sunum.pptx dosyasında kalıtım bölümü eklendi.
