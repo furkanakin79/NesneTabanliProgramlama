@@ -18,3 +18,4 @@ Nesne tabanlı programlama - Sunum.pptx
 <br />
 <p>Nesne tabanlı programlama - Sunum.pptx dosyasında kalıtım bölümü eklendi.
 <p> 04_kalitim_1.png dosyası eklendi.
+<p> 04_kalitim_2.png dosyası eklendi.
