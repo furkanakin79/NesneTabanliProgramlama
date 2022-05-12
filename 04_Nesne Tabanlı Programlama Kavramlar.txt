@@ -1,0 +1,44 @@
+Sınıf Tipleri			: Sınıflar soyut (abstract) ve soyut olmayan sınıflar olarak iki kategoriden oluşur. Soyut sınıflar çalıştığınız sorun üzerinde yer alan, daha genel olan yapılardır. Soyut sınıflardan nesne/örnek üretilemez.
+
+						  Örneğin, NASA’da çalışmaya başladınız. Mars yüzeyine gönderilmek üzere size bir araç talebi gelirse, sanırım aklınıza gelen ilk soru ‘Nasıl bir araç?’ sorusu olur. Bilgisayarda da bu durum geçerlidir. Bir araç oluşturulmak istendiği zaman, Vehicle sınıfının hangi alt kırılımına ait nesne üretilmesi gerektiğine dair muğlak bir durum oluşacağı için soyut sınıflar üzerinden nesne oluşturulamaz.
+
+Abstract Metot			: Soyut sınıfları kullanmamızın bir diğer amacı ise ortak bir yapı ortaya koyabilmektir. Bunu yaparken kullanabileceğimiz özellik ise soyut metotlardır. Soyut metot şu anlama gelmektedir; sınıf bir kabiliyete sahiptir ama bu kabiliyeti nasıl ortaya koyduğu her alt kırılımda farklılık gösterecektir. Her yiğit yoğurt yer ama her yiğidin ayrı bir yoğurt yiyişi vardır.					  
+
+Virtual	Özellik			: Üzerine yazılabilecek bir özellik oluşturmamıza yarar. Miras alınan sınıflarda bu özelliğin içeriği değiştirilebilir.
+
+Override				: Üst sınıftaki özelliğin/metotun üzerine yazılmasını sağlar.
+
+Arayüz 					: Bir nesnenin hangi davranışları sergileyip sergilemediğini tanımlamak için kullanılır. Arayüzleri bir taslak gibi düşünebiliriz. Arayüzü implemente eden sınıfların herbirinde interfacede olan metotlar olacaktır. Metodun içerisinde neler yapılacağı, her implemente eden sınıf tarafından kendine has kurallarla yazılacaktır. Interfacelerde erişim denetleyiceler kullanılmaz, yapıcı ve yıkıcı metotlar kullanılmaz, kod yazılmaz.
+
+Kalıtım					: Sınıf ve arayüzlerin arasındaki ilişkinin modellenmesidir. Bir sınıfın veya arayüzün başka bir sınıf veya arayüzü üstlenerek aynı özellik ve davranışları sergilemesidir.
+
+						  Bir sınıf bir başka sınıfı kimlik endişesiyle kalıtım alır. Örneğin, Human (insan) sınıfı Organism (organizma) sınıfını kendi kimliği gereği üstüne alır. Bir diğer deyişle “insan bir organizmadır” sözcüğünün yazılım dilindeki karşılığı, bir sınıfın başka bir sınıfı kalıtım almasıdır.
+						  
+						  Arayüzler ise sergilenen yetenekler gereği üstlenilir. Human sınıfı GoForward veya Think gibi metotları IMovable veya IAbleToThink arayüzleri aracılığıyla elde eder. “İnsan koşabilir” veya “İnsan düşünebilir” demenin yolu bir sınıfın arayüzleri kalıtım almasıdır.
+						  
+Not						: Bir sınıf C# dilinde yalnızca bir sınıfı kalıtım alırken birden fazla arayüze ait davranışı sergileyebilir. Ayrıca bir sınıf hem başka bir sınıfı kalıtım alıp hem arayüz implementasyonu yapabilir. “İnsan düşünebilen, hareket edebilen bir organizmadır” demenin yolu aşağıdaki kod parçasıdır:
+
+						  public class Human : Organism, IAbleToThink, IMovable
+						  {
+						    ...
+						  }
+
+Çok Biçimlilik			: Kalıtım ile birlikte ortaya çıkan bir özelliktir. Aynı metot imzası ile farklı işlemlerin tetiklenmesi çok biçimliliğin somut halidir. 
+
+						  foreach (var movable in new IMovable[]{new Rover(), new Human()})
+						  {
+						  movable.GoForward();
+						  }
+
+						  Tekerlek döndürülüyor
+						  Adım atılıyor
+						  
+Kapsülleme				: Bir nesne içerisinde var olan verilerin dış dünyadan saklanması, erişilmesine kısıt getirilmesi veya üzerinde yapılan değişikliklerin belli kurallara tabi tutulması için yürütülen aksiyonlara verilen isimlerdir.
+	
+						  Karmaşıklığın gizlenmesi dışında, özelliklere erişimin kısıtlanması da kapsülleme olarak isimlendirilir. Kısıtlama işlemleri için kullanılan anahtar kelimelere erişim belirteci (access modifiers) denir.
+						  
+Erişim Denetleyiciler	: Public, Private, Protected ...
+
+						  'public Point CurrentPoint { get; private set; }' şeklindeki tanımlama da; CurrentPoint özelliğine erişimlerin public get ve private set oluşu şu anlama gelmektedir: bir aracın (rover) o anki konumunu okuyabilirsiniz ama değiştiremezsiniz. Değiştirmek için metot kullanmamız gerekecektir.
+						  
+: base(...)				: Üst sınıftaki yapıcı metotu çağır anlamına gelir.

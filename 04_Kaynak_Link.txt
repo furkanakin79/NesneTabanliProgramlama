@@ -1,0 +1,5 @@
+https://ademcatamak.medium.com/nesne-y%C3%B6nelimli-programlama-oop-2425e8de1a
+https://www.mertkimyonsen.com/csharp-object-oriented-programming/
+https://yazilimnedir.com/csharp-nesne-yonelimli-programlama-oop-nedir-tum-detaylariyla/
+http://www.sinanbozkus.com/c-ile-nesne-yonelimli-programlama/
+https://mustafabukulmez.com/2020/06/28/c-inheritance-c-miras-kavrami/
